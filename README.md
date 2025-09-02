@@ -6,7 +6,7 @@ It includes examples of method overloading, exception handling, and interactive 
 ---
 
 ## 📂 Project Structure
-
+```
 src/
 ├── mainclass/
 │ └── MainClass.java # Main interactive program (menu-driven)
@@ -14,8 +14,7 @@ src/
 ├── Stack.java # Stack implementation with push/pop overloads
 ├── Person.java # Person model class
 ├── Gender.java # Enum for Gender (MALE/FEMALE)
-
-
+```
 ---
 
 ## 🚀 Features
