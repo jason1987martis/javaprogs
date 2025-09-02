@@ -76,4 +76,26 @@ src/
 2. Custom Exceptions: Replace generic Exception with StackOverflowException and StackUnderflowException.
 3. Validation: Handle invalid gender input gracefully.
 4. Collections: Could replace arrays with ArrayList<Person> for more flexibility.
-   
+
+
+   ## UML Diagram
+   ```
+   +-------------------+        +---------------------+
+    |     MainClass     |       |       Stack         |
+    +-------------------+       +---------------------+
+    | - main(String[])  |       | - top: int          |
+    | - getPersonData() |       | - elements: Person[]|
+    +-------------------+       +---------------------+
+        |                           ^
+        | uses                      |
+        v                           |
+    +-------------------+       +-------------------+
+    |      Person       |<------|    Gender (enum)  |
+    +-------------------+       +-------------------+
+    | - name: String    |       | MALE              |
+    | - age: int        |       | FEMALE            |
+    | - gender: Gender  |       +-------------------+
+    +-------------------+
+    | + toString()      |
+    +-------------------+
+```
